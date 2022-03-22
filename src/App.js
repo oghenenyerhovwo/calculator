@@ -1,3 +1,5 @@
+/* eslint no-eval: 0 */
+
 import React, {useEffect,useRef, useState}from "react"
 
 function App() {
@@ -40,7 +42,7 @@ function App() {
         } else{
             setMaths(text)
             solve(text)
-        }
+        } // eslint-disable-next-line
     }, [text])
 
     useEffect(() => {
